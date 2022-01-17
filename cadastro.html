@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu Cadastro</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+    <section>
+        <div>
+            <h1>Com a YouBank</h1>
+            <h2>Você tem taxa zero para investir</h2>
+            <p>Invista em renda fixa e variável<br> sem taxa de corretagem e<br> custódia.</p>
+        </div>
+        <img src="assets/bank-woman.svg" alt="Mulher no Banco">
+    </section>
+    <form>
+        <legend>Fazer Cadastro</legend>
+        <div class="form-field-name">
+            <label for="name">Nome</label>
+            <input type="name" name="username" id="name" placeholder="Digite seu nome" required autocomplete="off">
+        </div>
+        </div>
+        <div class="form-field-email">
+            <label for="text">CPF</label>
+            <input type="text" maxlength="14" onkeyup="mascara_cpf()" autocomplete="off" name="text" id="cpf"
+                placeholder="123.456.678-91">
+        </div>
+        </div>
+        <div class="form-field-password">
+            <label for="password" id="Senha">Senha</label>
+            <input type="password" name="password" id="senha" placeholder="************" required>
+            <i id="verSenha" class="fas fa-eye"></i>
+        </div>
+        <div class="form-field-password">
+            <label for="ConfirmSenha" id="ConfirmarSenha">Confirmar Senha</label>
+            <input type="password" name="passwword" id="ConfirmSenha" placeholder="************" required>
+            <i id="verConfirmSenha" class="fas fa-eye"></i>
+        </div>
+        <Button id="button" onclick="cadastrar()">Cadastrar-se</Button>
+        <a class="back-init" href="index.html">Voltar a tela inicial</a>
+    </form>
+    <script src="cadastro.js"></script>
+</body>
+
+</html>

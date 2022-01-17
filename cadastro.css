@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'inter', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: row;
+}
+section img{
+    width: 960px;
+    height: 62vh;
+}
+section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 150px;
+    text-align: center;
+}
+section div h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+section div h2{
+    margin-bottom: 15px;
+}
+
+form{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 960px;
+    height: 100vh;
+    background-color: black;
+}
+form legend{
+    padding-bottom: 100px;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: bold;
+    color: #fff;
+}
+form p{
+    margin-right: 460px;
+    color: #fff;
+    margin-bottom: 5px;
+
+}
+form input{
+    color: #fff;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background: none;
+    outline: none;
+    font-size: 19px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 50px;
+}
+form .form-field-name{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+form .form-field-password{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    position: relative;
+}
+.fa-eye{
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    top: 30px;
+    right: 40px;
+}
+form .form-field-email{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+
+ button{
+    cursor: pointer;
+    font-size: 22px;
+    background-color: #fff;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+}
+button:hover{
+    transform: scale(1.08)
+}
+form .back-init{
+    color: #fff;
+    padding-top: 130px;
+    margin-left: 700px;
+}
+
+.errorInput{
+    border-bottom: 2px solid red !important;
+}
+@media (max-width: 1000px){
+    section{
+    display: none;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 960px;
+        height: 960px;
+        background-color: black;
+        padding-right: 600px;
+    }
+    form legend{
+        font-size: 20px;
+        line-height: 60px;
+        font-weight: bold;
+        color: #fff;
+    }
+    form input{
+        color: #fff;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        background: none;
+        outline: none;
+        font-size: 19px;
+        width: 300px;
+        height: 50px;
+    }
+}
