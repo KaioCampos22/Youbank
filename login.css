@@ -113,7 +113,7 @@ form a{
     form{
         display: flex;
         flex-direction: column;
-        width: 960px;
+        max-width: 960px;
         height: 940px;
         background-color: black;
         padding-right: 600px;
